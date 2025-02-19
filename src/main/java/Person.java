@@ -2,9 +2,9 @@ import java.util.ArrayList;
 
 public class Person {
     // Define attributes for Person
-    private String name;
-    private int age;
-    private String address;
+    private final String name;
+    private final int age;
+    private final String address;
 
     // Define constructor for Person
     public Person(String personName, int personAge, String personAddress) {
@@ -16,7 +16,7 @@ public class Person {
     // Display all attributes for each Person
     public static void displayPeople(ArrayList<Person> people) {
         for (int i = 0; i < people.size(); i++) {
-            System.out.println("Person #" + Integer.toString(i+1));
+            System.out.println("Person #" + (i+1));
             System.out.println("Name: " + people.get(i).name);
             System.out.println("Age: " + people.get(i).age);
             // Only print newline if not the last person
@@ -26,7 +26,7 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        ArrayList<Person> people = new ArrayList<Person>();
+        ArrayList<Person> people = new ArrayList<>();
 
         people.add(new Person("Don Quixote", 22, "The Limbus"));
         people.add(new Person("Zach", 19, "Laguna, Philippines"));
