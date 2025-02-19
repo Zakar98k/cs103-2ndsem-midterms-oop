@@ -24,7 +24,7 @@ public class Dog {
     public static void displayDog(Dog dog) {
         System.out.println("name: " + dog.getName());
         System.out.println("breed: " + dog.getBreed());
-        System.out.println("-".repeat(dog.getBreed().length()));
+        System.out.println("-".repeat(dog.getBreed().length() * 2));
 
     }
 
