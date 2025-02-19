@@ -12,7 +12,7 @@ public class Person {
     }
 
     // Display all attributes for Person
-    public personInfo(Person person) {
+    public void personInfo(Person person) {
         System.out.println(person.name);
         System.out.println(person.age);
         System.out.println(person.address);
